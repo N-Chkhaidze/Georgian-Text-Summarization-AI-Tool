@@ -5,10 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv(override=True)
 
-# გვერდის კონფიგურაცია
 st.set_page_config(page_title="Georgian AI Analyzer", page_icon="🇬🇪", layout="wide")
 
-# Custom CSS დიზაინისთვის
 st.markdown("""
     <style>
     .main { background-color: #f5f7f9; }
@@ -19,7 +17,6 @@ st.markdown("""
 
 API_KEY = os.getenv("GEMINI_API_KEY")
 
-# Sidebar-ში გადავიტანეთ კონფიგურაცია
 with st.sidebar:
     st.header("⚙️ პარამეტრები")
     analysis_type = st.selectbox(
@@ -28,11 +25,9 @@ with st.sidebar:
     )
     st.info("ეს აპლიკაცია იყენებს Gemini 2.0 Flash მოდელს.")
 
-# მთავარი კონტენტი
 st.title("🇬🇪 ქართული ტექსტის AI აგენტი")
 st.write("ჩააკოპირეთ ტექსტი ქვემოთ და მიიღეთ მყისიერი ანალიზი.")
 
-# გავყავით ეკრანი ორ ნაწილად (ტექსტისთვის და შედეგისთვის)
 col1, col2 = st.columns([1, 1])
 
 with col1:
