@@ -18,7 +18,7 @@ st.markdown("""
 API_KEY = os.getenv("GEMINI_API_KEY")
 
 with st.sidebar:
-    st.header("⚙️ settings")
+    st.header(" settings")
     analysis_type = st.selectbox(
         "Select analysis type:",
         ["Summary", "Bullet Points", "Critical Analysis", "Simplified Language"]
