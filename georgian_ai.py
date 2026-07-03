@@ -54,7 +54,7 @@ with col2:
                 
                 with st.spinner('⏳ აგენტი ამუშავებს მონაცემებს...'):
                     response = client.models.generate_content(
-                        model="gemini-2.0-flash",
+                        model="model="gemini-1.5-flash",
                         contents=f"{prompts[analysis_type]}\n\n{input_text}"
                     )
                     st.success("მზადაა!")
