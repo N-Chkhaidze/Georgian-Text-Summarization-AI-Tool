@@ -7,7 +7,7 @@ This application serves as a centralized AI service. Users can input Georgian te
 1) 🛠 Technical Overview
 The application is architected as a server-side authenticated service:
 
-1.1) Authentication: The app uses a single master API_KEY. This key is stored securely in st.secrets (on the cloud) or a local .env file (for development) and is injected into the runtime environment. The key is never exposed to the user or committed to version control.
+1.1) Authentication: The app uses a single master API_KEY. This key is stored securely in st.secrets (on the cloud) and in local .env file (for development) and is injected into the runtime environment. The key is never exposed to the user or committed to version control.
 
 1.2) API Integration: It utilizes the google-genai SDK to communicate with the Gemini 2.5 Flash model.
 
