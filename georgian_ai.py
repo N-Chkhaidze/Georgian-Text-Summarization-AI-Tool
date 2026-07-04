@@ -23,7 +23,7 @@ with st.sidebar:
         "Select analysis type:",
         ["Summary", "Bullet Points", "Critical Analysis", "Simplified Language"]
     )
-    st.info("This application uses the Gemini 2.0 Flash model.")
+    st.info("This application uses the Gemini 2.5 Flash model.")
 
 st.title("🇬🇪 Georgian text AI agent")
 st.write("Copy the text below and get an instant analysis.")
